@@ -239,3 +239,5 @@ class QonversionClient {
 }
 
 export default QonversionClient;
+
+export * from "./types";

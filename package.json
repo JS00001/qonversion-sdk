@@ -1,6 +1,6 @@
 {
   "name": "qonversion-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "⚡️ An SDK to easily access Qonversions Restful API",
   "main": "index.js",
   "repository": "https://github.com/JS00001/qonversion-sdk",

@@ -16,5 +16,17 @@
   },
   "dependencies": {
     "axios": "^1.6.7"
-  }
+  },
+  "keywords": [
+    "qonversion",
+    "qonversion-sdk",
+    "sdk",
+    "restful",
+    "api",
+    "typescript"
+  ],
+  "bugs": {
+    "url": "https://github.com/JS00001/qonversion-sdk/issues"
+  },
+  "homepage": "https://github.com/JS00001/qonversion-sdk#readme"
 }

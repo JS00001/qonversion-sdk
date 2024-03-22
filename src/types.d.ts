@@ -131,7 +131,7 @@ export interface CreateUserProperty {
      * The error message for the property
      */
     error: string;
-  };
+  }[];
 }
 
 export interface Identity {

@@ -236,6 +236,42 @@ class QonversionClient {
       throw error;
     }
   }
+
+  /**
+   * POST /v3/users/:userId/purchases
+   * Create a new purchase for a user using their qonversion user id
+   */
+  public async createPurchase(
+    userId: string,
+    price: string,
+    currency: string,
+    stripeStoreData: {
+      subscription_id: string;
+      product_id: string;
+    }
+  ) {
+    const url = `${this.baseUrl}/users/${userId}/purchases`;
+
+    const config = {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        Authorization: `Bearer ${this.secretKey}`,
+      },
+    };
+
+    const data = {
+      price,
+      currency,
+      stripe_store_data: stripeStoreData,
+    };
+
+    try {
+      await axios.post(url, data, config);
+    } catch (error) {
+      throw error;
+    }
+  }
 }
 
 export default QonversionClient;

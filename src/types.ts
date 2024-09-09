@@ -57,7 +57,7 @@ export interface Event {
   app_version?: string;
   sdk_version?: string;
   environment: Environment;
-  platform?: "iOS" | "android";
+  platform?: "iOS" | "Android" | "Stripe";
   ip?: string;
   country?: string;
   old_product_id?: string;
